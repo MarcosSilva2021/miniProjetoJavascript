@@ -65,6 +65,9 @@ header input{
     top: 0;
     left: 0;
     z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 200ms;
 }
 
 .modal{
@@ -77,6 +80,9 @@ header input{
     left: 50px;
     z-index: 2;
     transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 200ms;
 }
 
 .modal form h3{
