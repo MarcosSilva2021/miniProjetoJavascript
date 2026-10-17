@@ -70,6 +70,11 @@ header input{
     transition-duration: 200ms;
 }
 
+#overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
 .modal{
     width: 400px;
     background-color: white;
@@ -83,6 +88,11 @@ header input{
     visibility: hidden;
     opacity: 0;
     transition-duration: 200ms;
+}
+
+.modal.active{
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal form h3{
