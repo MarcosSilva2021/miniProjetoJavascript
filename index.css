@@ -99,6 +99,14 @@ header input{
     font-size: 24px;
     color: #999;
     margin-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal form i{
+    color: blue;
+    font-size: 24px;
 }
 
 .modal form label{
