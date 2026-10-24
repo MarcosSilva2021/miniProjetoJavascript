@@ -81,6 +81,18 @@ header input{
     margin-bottom: 16px;
 }
 
+#tarefas ul li .actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    cursor: pointer;
+    color: #999;
+}
+
+#tarefas ul li .actions i:hover{
+    color: blue;
+}
+
 #overlay{
     width: 100vw;
     height: 100vh;
