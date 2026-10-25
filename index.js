@@ -1,4 +1,4 @@
-function novaTarefa(){
+function abrirModal(){
     overlay.classList.add("active");
     criarTarefa.classList.add("active");
 }
