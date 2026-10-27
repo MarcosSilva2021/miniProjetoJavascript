@@ -82,3 +82,25 @@ function pesquisarTarefa(){
         })
     }
 }
+
+function pesquisarTarefaTituloDescricao(){
+    let lis = document.querySelectorAll("ul li");
+    let termoBusca = busca.value.toLowerCase();
+
+    if(termoBusca.length > 0){
+        lis.forEach(li => {
+            let titulo = li.children[0].innerText.toLowerCase();
+            let descricao = li.children[1].innerText.toLowerCase();
+
+            if(titulo.includes(termoBusca) || descricao.includes(termoBusca)){
+                li.classList.remove('oculto');
+            }else {
+                li.classList.add('oculto');
+            }            
+        })
+    }else{
+        lis.forEach(li => {
+            li.classList.remove('oculto');
+        })
+    }
+}
