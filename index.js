@@ -25,7 +25,7 @@ function inserirTarefas(listaDeTarefas){
                     <h5>${tarefa.titulo}</h5>
                     <p>${tarefa.descricao}</p>
                     <div class="actions">
-                        <i class="bx bx-trash" size="sm" ></i>
+                        <i class="bx bx-trash" size="sm" onclick="deletarTarefa(${tarefa.id})" ></i>
                     </div>    
                 </li>
             `; 
@@ -53,4 +53,15 @@ function novaTarefa(){
         buscarTarefas();
     })
       
+}
+
+function deletarTarefa(id){
+    //alert(id);
+    fetch(`http://localhost:3000/tarefas/${id}`,{
+        method: "DELETE",
+    })
+    .then(res => res.json())
+    .then(res => {
+        alert("tarefa deletada com sucesso!")
+    })
 }
