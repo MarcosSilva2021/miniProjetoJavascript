@@ -33,7 +33,7 @@ function inserirTarefas(listaDeTarefas){
     }
 }
 
-function novaTarefa(){
+function novaTarefa(event){
     event.preventDefault();
     //alert("Funcionou !!!");
     let tarefa = {
