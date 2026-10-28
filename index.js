@@ -64,7 +64,8 @@ function deletarTarefa(id){
     })
     .then(res => res.json())
     .then(res => {
-        alert("tarefa deletada com sucesso!")
+        alert("tarefa deletada com sucesso!");
+        buscarTarefas();
     })
 }
 
