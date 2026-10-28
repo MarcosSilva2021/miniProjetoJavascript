@@ -51,6 +51,8 @@ function novaTarefa(){
     .then(res => {
         fecharModal();
         buscarTarefas();
+        let form = document.querySelector("#criarTarefa form");
+        form.reset();
     })
       
 }
